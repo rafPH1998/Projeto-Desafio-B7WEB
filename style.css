@@ -1,0 +1,224 @@
+body {
+    background-image: url('b7live-live1/public/images/bg.jpg');
+    background-position:top center;
+    background-size:cover;
+    margin: 0;
+    font-family: arial;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.logo-mobile {
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    background-color: white;
+    display: none;
+    
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    height: 700px;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+.content{
+    width: 500px;
+    height: 500px;
+    margin-top: 80px;
+}
+
+.images{
+    width: 500px;
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.images img{
+    width: 260px;
+    height: 500px;
+}
+
+.img1{
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.img2{
+    position: relative;
+    z-index: 1;
+    margin-left: -100px;
+}
+
+h1 {
+    color:white;
+    font-size: 30px;
+}
+
+p{
+    color:white;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 50px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #29BE56;
+    color: #FFF;
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.buttons .button-blue {
+    background-color: #3498D8;
+}
+
+@media (max-width:850px) {
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    section {
+        margin-left: 170px;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        height: 980px;
+    }
+
+    li {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    .content {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .images {
+        margin-top: 0;
+        display: block;
+        margin-top: 60px;
+        width: auto;
+    }
+
+    .img1 {
+        position: relative;
+        margin-top: 15px;
+        margin-right: 50px;
+        margin-left: -80px;
+    }
+
+    .img2 {
+        margin-left: -20px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:660px) {
+    .menu {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        margin-left: 50px;
+    }
+
+    section {
+        margin-left: 60px
+    }
+
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button {
+        width: 400px;
+    }
+
+    .img1{
+        position: relative;
+        z-index: 2;
+        margin-top: 15px;
+    }
+    
+    .img2{
+        position: relative;
+        z-index: 1;
+        margin-left: -190px;
+    }
+
+    .images {
+        display: flex
+    }
+    
+    
+}
+
+@media (max-width:660px) {
+    .images {
+        display: flex;
+        margin-left: 220px;
+    }
+}
+
+
